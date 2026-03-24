@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f2c73ec-f12a-4364-9ab9-9443313ac81f" name="Changes" comment="" />
+    <list default="true" id="1f2c73ec-f12a-4364-9ab9-9443313ac81f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/controller/CategoriaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +21,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LuizHenriqueMaronezi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LuizHenriqueMaronezi/pedidos-api.git",
+    "accountId": "d5623a53-0b63-40f5-bfad-77a8318c8a88"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -28,6 +47,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="3BMXcDdpqrQKBzk6yVkSdO7kK2l" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +60,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.PedidosApiApplication.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/luizh/Desktop/projetos-spring/pedidos-api",
     "project.structure.last.edited": "SDKs",
@@ -46,6 +69,27 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="PedidosApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="pedidos-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.LuizHenriqueMaronezi.pedidosapi.PedidosApiApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.LuizHenriqueMaronezi.pedidosapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PedidosApiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
