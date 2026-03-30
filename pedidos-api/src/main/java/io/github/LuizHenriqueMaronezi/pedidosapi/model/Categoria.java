@@ -2,18 +2,24 @@ package io.github.LuizHenriqueMaronezi.pedidosapi.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
 @Entity
-@Table(name = "tb_categoria")
+@Table(name = "categoria")
 public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+
     @Column(name = "nome", nullable = false, length = 100)
     private String nome;
+
+    @ManyToMany(mappedBy = "categorias")
+    private List<Produto> produtos = new ArrayList<>();
 
     public Categoria(){
     }
@@ -37,6 +43,14 @@ public class Categoria {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
     }
 
     @Override
