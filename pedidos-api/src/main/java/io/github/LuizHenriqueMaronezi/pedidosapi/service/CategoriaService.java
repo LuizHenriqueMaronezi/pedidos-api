@@ -1,10 +1,16 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi.service;
 
+import io.github.LuizHenriqueMaronezi.pedidosapi.dto.CategoriaDTO;
+import io.github.LuizHenriqueMaronezi.pedidosapi.mapper.CategoriaMapper;
 import io.github.LuizHenriqueMaronezi.pedidosapi.model.Categoria;
 import io.github.LuizHenriqueMaronezi.pedidosapi.repository.CategoriaRepository;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.ObjectNotFoundException;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -13,9 +19,17 @@ import java.util.UUID;
 public class CategoriaService {
 
     private final CategoriaRepository categoriaRepository;
+    private final CategoriaMapper mapper;
 
-    public Optional<Categoria> buscarPorId(UUID id){
-        return categoriaRepository.findById(id);
+    public List<CategoriaDTO> pesquisa(){
+        return categoriaRepository.findAll().stream().map(mapper::toDTO).toList();
+    }
+
+    public CategoriaDTO buscarPorId(UUID id){
+        Categoria categoria = categoriaRepository.findById(id).orElseThrow(()
+                -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Categoria não encontrada no sistema."));
+        
+        return mapper.toDTO(categoria);
     }
 
     public Categoria salvar(Categoria categoria){

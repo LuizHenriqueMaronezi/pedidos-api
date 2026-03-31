@@ -1,5 +1,6 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;

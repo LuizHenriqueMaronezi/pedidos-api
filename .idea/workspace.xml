@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f2c73ec-f12a-4364-9ab9-9443313ac81f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/PedidosApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/PedidosApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/controller/CategoriaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/service/CategoriaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,6 +48,9 @@
         <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
