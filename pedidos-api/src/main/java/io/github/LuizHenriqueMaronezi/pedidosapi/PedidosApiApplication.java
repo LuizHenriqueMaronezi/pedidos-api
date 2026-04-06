@@ -21,7 +21,7 @@ public class PedidosApiApplication implements CommandLineRunner {
 	private final CategoriaService categoriaService;
 	private final ProdutoService produtoService;
 
-	static void main(String[] args) {
+	static void main(String[] args){
 		SpringApplication.run(PedidosApiApplication.class, args);
 	}
 

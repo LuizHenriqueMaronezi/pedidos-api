@@ -28,7 +28,7 @@ public class CategoriaService {
     public CategoriaDTO buscarPorId(UUID id){
         Categoria categoria = categoriaRepository.findById(id).orElseThrow(()
                 -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Categoria não encontrada no sistema."));
-        
+
         return mapper.toDTO(categoria);
     }
 

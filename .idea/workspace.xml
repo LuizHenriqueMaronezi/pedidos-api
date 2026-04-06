@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f2c73ec-f12a-4364-9ab9-9443313ac81f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pedidos-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/PedidosApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/PedidosApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/controller/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/mapper/CategoriaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/mapper/CategoriaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/mapper/ProdutoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/mapper/ProdutoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/service/CategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,23 +64,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.PedidosApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PedidosApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/luizh/Desktop/projetos-spring/pedidos-api&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PedidosApiApplication.executor": "Run",
+    "Docker.pedidos-api: Compose Deployment.executor": "Run",
+    "Maven.pedidos-api [clean,install].executor": "Run",
+    "Maven.pedidos-api [clean].executor": "Run",
+    "Maven.pedidos-api [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.PedidosApiApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/luizh/Desktop/projetos-spring/pedidos-api",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.PedidosApiApplication">
     <configuration name="PedidosApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="pedidos-api" />
@@ -94,9 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pedidos-api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="pedidos-api/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.pedidos-api: Compose Deployment" />
+      <item itemvalue="Spring Boot.PedidosApiApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PedidosApiApplication" />
+        <item itemvalue="Docker.pedidos-api: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
