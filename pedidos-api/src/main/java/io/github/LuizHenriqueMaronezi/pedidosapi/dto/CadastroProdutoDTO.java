@@ -1,13 +1,15 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.UUID;
 
-public record ProdutoDTO(
+public record CadastroProdutoDTO(
         UUID id,
 
         @NotBlank(message = "Campo obrigatório")
@@ -15,6 +17,9 @@ public record ProdutoDTO(
         String nome,
 
         @Positive(message = "O preço não pode ser negativo")
-        BigDecimal preco
+        BigDecimal preco,
+
+        @NotNull(message = "Campo obrigatório")
+        List<UUID> idCategorias
 ) {
 }

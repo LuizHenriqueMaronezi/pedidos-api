@@ -1,5 +1,6 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi.service;
 
+import io.github.LuizHenriqueMaronezi.pedidosapi.dto.CategoriaComProdutosDTO;
 import io.github.LuizHenriqueMaronezi.pedidosapi.dto.CategoriaDTO;
 import io.github.LuizHenriqueMaronezi.pedidosapi.exceptions.ObjetoNaoEncontradoException;
 import io.github.LuizHenriqueMaronezi.pedidosapi.mapper.CategoriaMapper;
@@ -18,18 +19,20 @@ public class CategoriaService {
     private final CategoriaRepository categoriaRepository;
     private final CategoriaMapper mapper;
 
-    public List<CategoriaDTO> pesquisa(){
-        return categoriaRepository.findAll().stream().map(mapper::toDTO).toList();
+    public List<CategoriaComProdutosDTO> pesquisa(){
+        return categoriaRepository.findAll().stream().map(mapper::toDTOComProdutos).toList();
     }
 
-    public CategoriaDTO buscarPorId(UUID id){
+    public CategoriaComProdutosDTO buscarPorId(UUID id){
         Categoria categoria = categoriaRepository.findById(id).orElseThrow(()
                 -> new ObjetoNaoEncontradoException("ID de categoria não encontrada no sistema. ID: " + id));
 
-        return mapper.toDTO(categoria);
+        return mapper.toDTOComProdutos(categoria);
     }
 
-    public Categoria salvar(Categoria categoria){
-        return categoriaRepository.save(categoria);
+    public void salvar(CategoriaDTO dto){
+
+        Categoria categoria = mapper.toEntity(dto);
+        categoriaRepository.save(categoria);
     }
 }
