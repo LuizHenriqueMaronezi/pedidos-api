@@ -1,7 +1,11 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi;
 
 import io.github.LuizHenriqueMaronezi.pedidosapi.model.Categoria;
+import io.github.LuizHenriqueMaronezi.pedidosapi.model.Cidade;
+import io.github.LuizHenriqueMaronezi.pedidosapi.model.Estado;
 import io.github.LuizHenriqueMaronezi.pedidosapi.model.Produto;
+import io.github.LuizHenriqueMaronezi.pedidosapi.repository.CidadeRepository;
+import io.github.LuizHenriqueMaronezi.pedidosapi.repository.EstadoRepository;
 import io.github.LuizHenriqueMaronezi.pedidosapi.service.CategoriaService;
 import io.github.LuizHenriqueMaronezi.pedidosapi.service.ProdutoService;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +24,8 @@ public class PedidosApiApplication implements CommandLineRunner {
 
 	private final CategoriaService categoriaService;
 	private final ProdutoService produtoService;
+	private final EstadoRepository estadoRepository;
+	private final CidadeRepository cidadeRepository;
 
 	static void main(String[] args){
 		SpringApplication.run(PedidosApiApplication.class, args);
@@ -28,7 +34,5 @@ public class PedidosApiApplication implements CommandLineRunner {
 	// Teste
 	@Override
 	public void run(String... args) throws Exception {
-
-
 	}
 }
