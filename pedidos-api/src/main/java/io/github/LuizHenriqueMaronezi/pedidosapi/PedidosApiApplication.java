@@ -1,9 +1,7 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi;
 
-import io.github.LuizHenriqueMaronezi.pedidosapi.model.Categoria;
-import io.github.LuizHenriqueMaronezi.pedidosapi.model.Cidade;
-import io.github.LuizHenriqueMaronezi.pedidosapi.model.Estado;
-import io.github.LuizHenriqueMaronezi.pedidosapi.model.Produto;
+import io.github.LuizHenriqueMaronezi.pedidosapi.model.*;
+import io.github.LuizHenriqueMaronezi.pedidosapi.model.enums.TipoCliente;
 import io.github.LuizHenriqueMaronezi.pedidosapi.repository.CidadeRepository;
 import io.github.LuizHenriqueMaronezi.pedidosapi.repository.EstadoRepository;
 import io.github.LuizHenriqueMaronezi.pedidosapi.service.CategoriaService;
@@ -34,5 +32,6 @@ public class PedidosApiApplication implements CommandLineRunner {
 	// Teste
 	@Override
 	public void run(String... args) throws Exception {
+
 	}
 }
