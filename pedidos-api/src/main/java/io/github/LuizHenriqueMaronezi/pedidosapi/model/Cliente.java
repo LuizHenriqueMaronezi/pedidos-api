@@ -34,7 +34,8 @@ public class Cliente {
     @CollectionTable(name="telefone")
     private Set<String> telefones = new HashSet<>();
 
-
+    @OneToMany(mappedBy = "cliente")
+    private List<Pedido> pedidos = new ArrayList<>();
 
     public Cliente(String nome, String email, UUID id, String cpfOuCnpj, TipoCliente tipoCliente) {
         this.nome = nome;

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f2c73ec-f12a-4364-9ab9-9443313ac81f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/pedidos-api/src/main/java/io/github/LuizHenriqueMaronezi/pedidosapi/model/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Exception" />
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Record" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
