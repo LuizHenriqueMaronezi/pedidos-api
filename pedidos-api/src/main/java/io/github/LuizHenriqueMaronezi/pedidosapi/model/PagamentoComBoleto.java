@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.UUID;
 
@@ -15,11 +17,11 @@ import java.util.UUID;
 @Entity
 public class PagamentoComBoleto extends Pagamento{
 
-    private Date dataVencimento;
-    private Date dataPagamento;
+    private LocalDate dataVencimento;
+    private Instant dataPagamento;
 
-    public PagamentoComBoleto(UUID id, EstadoPagamento estadoPagamento, Pedido pedido, Date dataVencimento, Date dataPagamento) {
-        super(id, estadoPagamento, pedido);
+    public PagamentoComBoleto(EstadoPagamento estadoPagamento, Pedido pedido, LocalDate dataVencimento, Instant dataPagamento) {
+        super(estadoPagamento, pedido);
         this.dataVencimento = dataVencimento;
         this.dataPagamento = dataPagamento;
     }

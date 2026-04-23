@@ -1,10 +1,13 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi.dto;
 
-public record EnderecoDTO(
+import java.util.UUID;
+
+public record EnderecoRequestDTO(
         String logradouro,
         String numero,
         String complemento,
         String bairro,
-        String cep
+        String cep,
+        UUID cidadeId
 ) {
 }

@@ -16,8 +16,8 @@ public class PagamentoComCartao extends Pagamento{
 
     private Integer numeroParcelas;
 
-    public PagamentoComCartao(UUID id, EstadoPagamento estadoPagamento, Pedido pedido, Integer numeroParcelas) {
-        super(id, estadoPagamento, pedido);
+    public PagamentoComCartao(EstadoPagamento estadoPagamento, Pedido pedido, Integer numeroParcelas) {
+        super(estadoPagamento, pedido);
         this.numeroParcelas = numeroParcelas;
     }
 }

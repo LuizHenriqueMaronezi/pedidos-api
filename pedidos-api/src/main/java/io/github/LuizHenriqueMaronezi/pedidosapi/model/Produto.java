@@ -8,10 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 @Getter
@@ -37,6 +34,10 @@ public class Produto {
             inverseJoinColumns = @JoinColumn(name = "categoria_id")
     )
     private List<Categoria> categorias = new ArrayList<>();
+
+    @Setter(AccessLevel.NONE)
+    @OneToMany(mappedBy = "produto")
+    private Set<ItemPedido> itens = new HashSet<>();
 
     public Produto(UUID id, String nome, BigDecimal preco) {
         this.id = id;

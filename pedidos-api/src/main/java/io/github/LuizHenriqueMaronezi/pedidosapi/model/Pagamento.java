@@ -27,8 +27,7 @@ public abstract class Pagamento {
     @MapsId
     private Pedido pedido;
 
-    public Pagamento(UUID id, EstadoPagamento estadoPagamento, Pedido pedido) {
-        this.id = id;
+    public Pagamento(EstadoPagamento estadoPagamento, Pedido pedido) {
         this.estadoPagamento = estadoPagamento;
         this.pedido = pedido;
     }

@@ -1,12 +1,14 @@
 package io.github.LuizHenriqueMaronezi.pedidosapi.model;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 
-import java.util.Date;
-import java.util.UUID;
+import java.time.Instant;
+import java.util.*;
 
 @Setter
 @Getter
@@ -18,7 +20,8 @@ public class Pedido {
     @GeneratedValue(strategy =  GenerationType.UUID)
     private UUID id;
 
-    private Date instante;
+    @CreationTimestamp
+    private Instant instante;
 
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "pedido")
     private Pagamento pagamento;
@@ -31,10 +34,11 @@ public class Pedido {
     @JoinColumn(name = "endereco_de_entrega_id")
     private Endereco enderecoDeEntrega;
 
-    public Pedido(UUID id, Date instante, Pagamento pagamento, Cliente cliente, Endereco enderecoDeEntrega) {
-        this.id = id;
-        this.instante = instante;
-        this.pagamento = pagamento;
+    @Setter(AccessLevel.NONE)
+    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
+    private List<ItemPedido> itens = new ArrayList<>();
+
+    public Pedido(Cliente cliente, Endereco enderecoDeEntrega) {
         this.cliente = cliente;
         this.enderecoDeEntrega = enderecoDeEntrega;
     }

@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.UUID;
 
 public record CadastroProdutoDTO(
-        UUID id,
-
         @NotBlank(message = "Campo obrigatório")
         @Size(min = 2, max = 140, message = "Campo fora do tamanho padrão")
         String nome,
