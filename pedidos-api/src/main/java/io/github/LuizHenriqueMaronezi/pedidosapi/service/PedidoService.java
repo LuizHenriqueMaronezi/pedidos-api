@@ -2,8 +2,10 @@ package io.github.LuizHenriqueMaronezi.pedidosapi.service;
 
 import io.github.LuizHenriqueMaronezi.pedidosapi.dto.CadastroPedidoDTO;
 import io.github.LuizHenriqueMaronezi.pedidosapi.dto.ItemPedidoDTO;
+import io.github.LuizHenriqueMaronezi.pedidosapi.dto.PedidoResponseDTO;
 import io.github.LuizHenriqueMaronezi.pedidosapi.exceptions.ObjetoNaoEncontradoException;
 import io.github.LuizHenriqueMaronezi.pedidosapi.mapper.EnderecoMapper;
+import io.github.LuizHenriqueMaronezi.pedidosapi.mapper.PedidoMapper;
 import io.github.LuizHenriqueMaronezi.pedidosapi.model.*;
 import io.github.LuizHenriqueMaronezi.pedidosapi.model.enums.EstadoPagamento;
 import io.github.LuizHenriqueMaronezi.pedidosapi.repository.*;
@@ -12,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +26,7 @@ public class PedidoService {
     private final EnderecoRepository enderecoRepository;
     private final CidadeRepository cidadeRepository;
 
+    private final PedidoMapper mapper;
     private final EnderecoMapper enderecoMapper;
 
     @Transactional
@@ -73,5 +77,12 @@ public class PedidoService {
         pedido.setPagamento(pagamento);
 
         repository.save(pedido);
+    }
+
+    public PedidoResponseDTO buscarPorId(UUID id){
+        var pedidoEncontrado = repository.findById(id).orElseThrow(
+                () -> new ObjetoNaoEncontradoException("ID não encontrado: " + id.toString()));
+
+        return mapper.toDto(pedidoEncontrado);
     }
 }
